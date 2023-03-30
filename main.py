@@ -18,3 +18,18 @@ def print_info(data):
     for row in data:
         print(row)
 
+
+def main():
+    data = read_info('file.txt')
+
+    sorted_by_area = sort_by_area(data)
+    print('Sort by area:')
+    print_info(sorted_by_area)
+
+    sorted_by_population = sort_by_population(data)
+    print('Sort by population:')
+    print_info(sorted_by_population)
+
+
+if __name__ == "__main__":
+    main()
