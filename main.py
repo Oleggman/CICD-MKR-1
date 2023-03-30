@@ -12,3 +12,9 @@ def sort_by_area(data):
 def sort_by_population(data):
     sorted_data = sorted(data, key=lambda x: int(x[2]))
     return sorted_data
+
+
+def print_info(data):
+    for row in data:
+        print(row)
+
