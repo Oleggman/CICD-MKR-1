@@ -1,11 +1,11 @@
 def read_info(file):
     with open(file, 'r') as f:
-        data = [line.strip().split(',') for line in f]
+        data = [line.strip().split(', ') for line in f]
     return data
 
 
 def get_sort(data, el):
-    return sorted(data, key=lambda x: int(x[2]))
+    return sorted(data, key=lambda x: int(x[el]))
 
 
 def sort_by_area(data):
