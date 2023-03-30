@@ -14,5 +14,12 @@ def sort_by_area():
         print(", ".join(country))
 
 
+def sort_by_population():
+    print("Sort by area: ")
+    sorted_by_population = get_sort(2)
+    for country in sorted_by_population:
+        print(", ".join(country))
+
+
 def get_sort(el):
     return sorted(data, key=lambda x: int(x[el]))
