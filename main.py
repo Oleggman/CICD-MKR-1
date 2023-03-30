@@ -8,3 +8,7 @@ def sort_by_area(data):
     sorted_data = sorted(data, key=lambda x: int(x[1]))
     return sorted_data
 
+
+def sort_by_population(data):
+    sorted_data = sorted(data, key=lambda x: int(x[2]))
+    return sorted_data
