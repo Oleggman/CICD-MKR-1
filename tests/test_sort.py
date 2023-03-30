@@ -15,6 +15,14 @@ def test_get_sort_1():
                                                               ['Third element', '365', '445']]
 
 
+def test_get_sort_2():
+    assert get_sort([['First element', '220', '430'],
+                     ['Second element', '105', '540'],
+                     ['Third element', '365', '445']], 2) == [['First element', '220', '430'],
+                                                              ['Third element', '365', '445'],
+                                                              ['Second element', '105', '540']]
+
+
 def test_sort_by_population():
     assert sort_by_population([['First element', '200', '300'],
                                   ['Second element', '100', '500'],
