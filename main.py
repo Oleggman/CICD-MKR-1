@@ -4,13 +4,17 @@ def read_info(file):
     return data
 
 
+def get_sort(data, el):
+    return sorted(data, key=lambda x: int(x[2]))
+
+
 def sort_by_area(data):
-    sorted_data = sorted(data, key=lambda x: int(x[1]))
+    sorted_data = get_sort(data, 1)
     return sorted_data
 
 
 def sort_by_population(data):
-    sorted_data = sorted(data, key=lambda x: int(x[2]))
+    sorted_data = get_sort(data, 2)
     return sorted_data
 
 
